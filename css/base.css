@@ -50,19 +50,13 @@ h6 {
   font-weight: 500;
 }
 
-/* Paragraphs */
-p {
-  margin-bottom: 1rem;
-}
-
 /* Links */
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
+a,
+a:visited,
 a:hover,
+a:active,
 a:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Buttons and form elements inherit font */
@@ -95,4 +89,8 @@ hr {
   border: none;
   border-top: 1px solid #eaeaea;
   margin: 1rem 0;
+}
+
+:root {
+  --blue: #007bff;
 }

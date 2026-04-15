@@ -3,6 +3,9 @@
   height: 40px;
   object-fit: contain; /* keeps aspect ratio, no stretching */
 }
+.content-container {
+  padding: 0 10rem;
+}
 
 .header {
   display: flex;
@@ -13,7 +16,7 @@
   z-index: 1000;
   height: 64px;
   width: 100%;
-  padding: 0 4rem;
+  padding: 0 10rem;
   border-width: 0 0px 1px 0px;
   border-style: solid;
   border-color: #eaeaeb;
@@ -37,10 +40,11 @@
 }
 
 .btn-resume-download {
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   background-color: inherit;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 2px solid #007bff;
+  width: fit-content;
 }
 
 .header .btn-resume-download:hover {
@@ -48,13 +52,112 @@
   color: white;
 }
 
-.about img {
-  width: 100px;
-  height: 100px;
-  vertical-align: middle;
-  display: inline-block;
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  min-height: calc(100vh - 64px);
+  max-width: 1100px;
+  align-items: start;
+  padding: 80px 0;
 }
 
-.content-container {
-  padding: 0 4rem;
+.intro-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.intro-availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: #aabbaa solid 1px;
+  border-radius: 20px;
+  padding: 2px 9px;
+  background: #e9f2e9;
+  width: fit-content;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 50%;
+  background: green;
+  animation: pulse 2.2s infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.intro-greeting {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.accent {
+  color: var(--blue);
+}
+
+.intro-typed {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--muted2);
+  min-height: 1.7rem;
+  margin-bottom: 1.75rem;
+  animation: up 0.5s 0.15s ease both;
+}
+
+.intro-typed .cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: var(--blue);
+  vertical-align: text-bottom;
+  margin-left: 2px;
+  animation: blink 0.85s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.intro-actions {
+  display: flex;
+  gap: 20px;
+}
+.view-work-btn {
+  color: white;
+  background: var(--blue);
+  border-radius: 10px;
+  border: 2px solid var(--blue);
+  width: fit-content;
+  padding: 0.5rem 1rem;
+}
+
+.intro-actions > a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0);
+}
+
+.intro-actions > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
