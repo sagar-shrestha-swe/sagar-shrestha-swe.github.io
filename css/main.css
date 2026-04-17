@@ -106,16 +106,14 @@
   color: var(--blue);
 }
 
-.intro-typed {
+.intro-title {
   font-size: 1.05rem;
-  font-weight: 300;
-  color: var(--muted2);
+  font-weight: 500;
   min-height: 1.7rem;
-  margin-bottom: 1.75rem;
   animation: up 0.5s 0.15s ease both;
 }
 
-.intro-typed .cursor {
+.intro-title .cursor {
   display: inline-block;
   width: 2px;
   height: 1em;
@@ -159,4 +157,23 @@
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tech-chip {
+  display: inline-block;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  border: 2px solid var(--blue);
+  transition: transform 0.2s ease;
+}
+
+.tech-chip:hover {
+  transform: scale(1.05);
 }

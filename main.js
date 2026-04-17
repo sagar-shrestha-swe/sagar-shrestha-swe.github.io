@@ -1,8 +1,8 @@
 const phrases = [
   'Full Stack Developer',
-  'React & Node.js Engineer',
-  'Java Spring Boot Dev',
-  'Cloud & AWS Specialist',
+  'Software Engineer',
+  'React & Angualar Developer',
+  '.NET Dev',
   'Batch Processing Expert',
 ];
 let pi = 0,
