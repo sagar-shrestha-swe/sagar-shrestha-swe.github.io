@@ -177,3 +177,29 @@
 .tech-chip:hover {
   transform: scale(1.05);
 }
+
+.skill-table {
+  display: flex;
+  flex-flow: column;
+  gap: 0;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 40px;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#about {
+  display: none;
+}
