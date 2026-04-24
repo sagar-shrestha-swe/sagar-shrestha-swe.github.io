@@ -87,10 +87,13 @@ button {
 /* Horizontal rule */
 hr {
   border: none;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #dfc3c3;
   margin: 1rem 0;
 }
 
 :root {
   --blue: #007bff;
+  --bg-card: #f8f8fb;
+  --border-accent: rgba(79, 70, 229, 0.25);
+  --border: rgba(0, 0, 0, 0.08);
 }
