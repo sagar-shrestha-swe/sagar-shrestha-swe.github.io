@@ -97,3 +97,9 @@ hr {
   --border-accent: rgba(79, 70, 229, 0.25);
   --border: rgba(0, 0, 0, 0.08);
 }
+
+.font-mono {
+  font-family:
+    Fira Code,
+    monospace;
+}

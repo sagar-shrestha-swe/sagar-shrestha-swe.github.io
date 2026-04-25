@@ -20,6 +20,7 @@
   border-width: 0 0px 1px 0px;
   border-style: solid;
   border-color: #eaeaeb;
+  background-color: white;
 }
 
 .header nav ul {
@@ -189,6 +190,7 @@
   gap: 40px;
   padding: 2.5rem 0;
   border-bottom: 2px solid var(--border);
+  align-items: center;
 }
 .skill-row:first-child {
   border-top: 2px solid var(--border);
@@ -245,10 +247,6 @@
   background-color: var(--blue);
 }
 
-#skills {
-  margin-top: 1rem;
-}
-
 .skill-row-label {
   font-weight: 700;
   font-size: 1.1rem;
@@ -262,4 +260,36 @@
   width: 20%;
   height: 2px;
   background-color: var(--blue);
+}
+section {
+  scroll-margin-top: 100px;
+}
+
+#about {
+  scroll-margin-top: 0;
+}
+
+.git-terminal {
+  color: hsl(from color h s l) #f05032;
+}
+.git-log {
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.log-cursor {
+  margin-left: -20px;
+  animation: log-blink 0.7s infinite;
+}
+@keyframes log-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.git-command {
+  color: #28a745;
 }
