@@ -118,7 +118,7 @@ q::after {
 
 /* Images */
 img {
-  max-width: 90%;
+  max-width: 100%;
   display: block;
 }
 
