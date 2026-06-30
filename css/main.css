@@ -707,3 +707,76 @@ section {
 .cert-info {
   flex: 1;
 }
+
+.edu-card > img {
+  width: 40px;
+  height: auto;
+}
+
+.edu-card {
+  display: flex;
+  flex-flow: row;
+  gap: 2rem;
+  align-items: center;
+}
+.edu-info {
+  flex: 1;
+}
+.edu-top-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.edu-status-badge {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--amber-bg);
+  color: var(--amber-text);
+}
+
+.edu-card {
+  padding: 1rem 1.5rem;
+  background: var(--bg-card);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color 0.15s;
+}
+
+.edu-card:hover {
+  border-color: var(--blue);
+}
+.edu-degree {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+.edu-date {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.edu-school {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.edu-details {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-top: 8px;
+}

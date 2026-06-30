@@ -105,6 +105,8 @@ hr {
   --bg-secondary: #f6f6f4;
   --radius-lg: 12px;
   --radius-md: 8px;
+  --amber-bg: #fffbeb;
+  --amber-text: #92400e;
 }
 
 .font-mono {
