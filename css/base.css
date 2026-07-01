@@ -107,6 +107,13 @@ hr {
   --radius-md: 8px;
   --amber-bg: #fffbeb;
   --amber-text: #92400e;
+  --green-dim: #e7f5ee;
+  --amber: #92610d;
+  --amber-dim: #fbf1e0;
+  --blue-dim: #eaf0fe;
+  --blue-dim: #eaf0fe;
+  --purple: #7c3aed;
+  --purple-dim: #f2ecfe;
 }
 
 .font-mono {

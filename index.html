@@ -5,6 +5,7 @@
     <!-- link to main stylesheet -->
     <link rel="icon" type="image/png" href="/assets/images/profile/logo.png" />
       <link  rel="preload" href="/assets/images/profile/profile.webp" as="image" />
+      <link  rel="preload" href="/assets/images/projects/bumpsheep.webp" as="image" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/css/reset.css" />
@@ -339,10 +340,50 @@
                   Software Engineer <span class="at">@ <span class="company-name">Verisk Nepal</span></span>
                 </div>
                 <div class="exp-desc">
-                  Developed and maintained scalable web applications using React and .NET,
-                  serving 10k+ daily users. Architected batch processing pipelines in Python
-                  that reduced data ingestion time by 40%. Designed RESTful APIs consumed
-                  by multiple front-end clients and improved test coverage from 45% to 82%.
+                  <div class="hunk" data-cat="web">
+      <div class="hunk-head">
+        <span>web-application-development</span>
+        <span class="path">.diff</span>
+        <span class="count">+7</span>
+      </div>
+      <div class="hunk-lines">
+        <div class="line"><span class="plus">+</span><span>Led the migration of a legacy application from .NET 6 to .NET 8, Angular 8 to Angular 17, and PrimeNG 8 to PrimeNG 18.</span></div>
+        <div class="line"><span class="plus">+</span><span>Developed enterprise web applications using ASP.NET Core, Angular, TypeScript, and SQL Server.</span></div>
+        <div class="line"><span class="plus">+</span><span>Built RESTful APIs and integrated secure authentication and CSRF protection.</span></div>
+        <div class="line"><span class="plus">+</span><span>Reduced a business process from 20 hours to approximately 5 hours per week.</span></div>
+        <div class="line"><span class="plus">+</span><span>Implemented backend and frontend pagination for improved performance with large datasets.</span></div>
+        <div class="line"><span class="plus">+</span><span>Resolved Coverity code quality issues to improve maintainability and reliability.</span></div>
+        <div class="line"><span class="plus">+</span><span>Designed SQL Server tables, stored procedures, and views.</span></div>
+      </div>
+    </div>
+ 
+    <div class="hunk" data-cat="batch">
+      <div class="hunk-head">
+        <span>batch-processing</span>
+        <span class="path">.diff</span>
+        <span class="count">+4</span>
+      </div>
+      <div class="hunk-lines">
+        <div class="line"><span class="plus">+</span><span>Developed and maintained high-volume batch processing applications.</span></div>
+        <div class="line"><span class="plus">+</span><span>Refactored processing modules to improve execution performance.</span></div>
+        <div class="line"><span class="plus">+</span><span>Maintained multithreaded batch applications.</span></div>
+        <div class="line"><span class="plus">+</span><span>Performed BDD testing using SpecFlow.</span></div>
+      </div>
+    </div>
+ 
+    <div class="hunk" data-cat="collab">
+      <div class="hunk-head">
+        <span>collaboration</span>
+        <span class="path">.diff</span>
+        <span class="count">+3</span>
+      </div>
+      <div class="hunk-lines">
+        <div class="line"><span class="plus">+</span><span>Worked in an Agile Scrum environment with sprint planning, backlog grooming, and retrospectives.</span></div>
+        <div class="line"><span class="plus">+</span><span>Used Git for version control and collaborative development.</span></div>
+        <div class="line"><span class="plus">+</span><span>Worked closely with business stakeholders and cross-functional teams.</span></div>
+      </div>
+    </div>
+ 
                 </div>
                 <div class="exp-tech">
                   <span>Angular</span><span>.NET</span><span>Javascript</span><span>PostgreSQL</span><span>AWS</span><span>SQL Server</span>
@@ -384,12 +425,32 @@
                 <div class="exp-role">
                   Software Engineering Internship <span class="at">@ <span class="company-name">Leapfrog Nepal Inc.</span></span>
                 </div>
-                <div class="exp-desc">
-                  Built Angular-based dashboards for internal analytics tools, improving
-                  reporting efficiency by 30%. Implemented microservices architecture with
-                  C# and SQL Server. Participated in Agile sprints and contributed to
-                  sprint planning, daily standups, and retrospectives.
-                </div>
+               <div class="hunk" data-cat="web">
+      <div class="hunk-head">
+        <span>figma-to-code</span>
+        <span class="path">.diff</span>
+        <span class="count">+3</span>
+      </div>
+      <div class="hunk-lines">
+        <div class="line"><span class="plus">+</span><span>Delivered pixel-perfect web page builds from Figma designs using HTML and CSS.</span></div>
+        <div class="line"><span class="plus">+</span><span>Converted the TuTangle web page from a static image template into a responsive site — handled Figma slicing, lo-fi wireframes, and effort estimation, then implemented it in HTML, CSS, and vanilla JavaScript.</span></div>
+        <div class="line"><span class="plus">+</span><span>Converted a client web page template into a responsive build using the same workflow: Figma slicing, lo-fi wireframes, estimation, and implementation in HTML, CSS, and vanilla JavaScript.</span></div>
+      </div>
+    </div>
+ 
+    <div class="hunk" data-cat="game">
+      <div class="hunk-head">
+        <span>game-dev</span>
+        <span class="path">.diff</span>
+        <span class="count">+3</span>
+      </div>
+      <div class="hunk-lines">
+        <div class="line"><span class="plus">+</span><span>Built a box-collision game using vanilla JavaScript.</span></div>
+        <div class="line"><span class="plus">+</span><span>Built a car game with bullet-firing mechanics using ES6 JavaScript.</span></div>
+        <div class="line"><span class="plus">+</span><span>Built "Bump Sheep," a canvas-based game using HTML, CSS, and vanilla JavaScript.</span></div>
+      </div>
+    </div>
+ 
                 <div class="exp-tech">
                   <span>HTML5</span><span>CSS3</span><span>Vanilla Javascript</span><span>Figma Design</span><span>Git</span>
                 </div>
@@ -435,20 +496,20 @@
         <div class="proj-top-row">
           <span class="proj-name">LeapFrog Intership Projects</span>
           <div class="proj-links">
-            <a href="https://github.com" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+            <a href="https://github.com/sagar-shrestha-swe/lf_git2" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
               <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="https://example.com" class="icon-link" target="_blank" rel="noopener" aria-label="Live site">
+            <a href="https://sagar-shrestha-swe.github.io/lf_git2/" class="icon-link" target="_blank" rel="noopener" aria-label="Live site">
               <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
         </div>
-        <p class="proj-desc">Real-time reporting dashboard for internal analytics — reduced manual reporting effort by 30% across teams.</p>
+        <p class="proj-desc">Completed multiple frontend and JavaScript projects, including responsive websites and interactive browser games, using HTML, CSS, vanilla JavaScript, and HTML5 Canvas.</p>
         <div class="exp-tech ">
-          <span class="proj-tag">React</span>
-          <span class="proj-tag">PostgreSQL</span>
-          <span class="proj-tag">AWS</span>
-          <span class="proj-tag">Chart.js</span>
+          <span class="proj-tag">HTML5</span>
+          <span class="proj-tag">CSS2</span>
+          <span class="proj-tag">JavaScript</span>
+          <span class="proj-tag">HTML Canvas Graphics</span>
         </div>
       </div>
       <div class="proj-footer">
@@ -460,7 +521,7 @@
     </article>
 
     <!-- Project 2 -->
-    <article class="proj-card" data-cat="fullstack">
+    <article class="proj-card" data-cat="Frontend">
       <div class="proj-img has-screenshot">
         <img src="assets/images/projects/bumpsheep.png" class="project-pic" alt="Bump sheep Game interface"></img>
         <div class="status-badge"><span class="sdot sdot-live"></span>live</div>
@@ -470,20 +531,20 @@
         <div class="proj-top-row">
           <span class="proj-name">Bump sheep Game</span>
           <div class="proj-links">
-            <a href="https://github.com" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+            <a href="https://github.com/sagar-shrestha-swe/lf_git2/tree/main/assignment/Final_Js_Assignments" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
               <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="https://example.com" class="icon-link" target="_blank" rel="noopener" aria-label="Live site">
+            <a href="https://sagar-shrestha-swe.github.io/lf_git2/assignment/Final_Js_Assignments/" class="icon-link" target="_blank" rel="noopener" aria-label="Live site">
               <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
         </div>
-        <p class="proj-desc">Real-time reporting dashboard for internal analytics — reduced manual reporting effort by 30% across teams.</p>
+        <p class="proj-desc">Developed an interactive HTML5 Canvas game featuring collision detection, animations, and game logic using vanilla JavaScript.</p>
         <div class="exp-tech ">
-          <span class="proj-tag">React</span>
-          <span class="proj-tag">PostgreSQL</span>
-          <span class="proj-tag">AWS</span>
-          <span class="proj-tag">Chart.js</span>
+          <span class="proj-tag">HTML5</span>
+          <span class="proj-tag">CSS2</span>
+          <span class="proj-tag">JavaScript</span>
+          <span class="proj-tag">HTML Canvas Graphics</span>
         </div>
       </div>
       <div class="proj-footer">
@@ -505,20 +566,21 @@
         <div class="proj-top-row">
           <span class="proj-name">To-do Application</span>
           <div class="proj-links">
-            <a href="https://github.com" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+            <a href="https://github.com/sagar-shrestha-swe/to-do" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
               <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="https://example.com" class="icon-link" target="_blank" rel="noopener" aria-label="Live site">
+            <a href="https://to-do-app-truemark.netlify.app/" class="icon-link" target="_blank" rel="noopener" aria-label="Live site">
               <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
         </div>
-        <p class="proj-desc">Real-time reporting dashboard for internal analytics — reduced manual reporting effort by 30% across teams.</p>
+        <p class="proj-desc">Built a responsive React-based To-Do application with full CRUD functionality using React Hooks and modern CSS, then deployed it on Netlify</p>
         <div class="exp-tech ">
           <span class="proj-tag">React</span>
-          <span class="proj-tag">PostgreSQL</span>
-          <span class="proj-tag">AWS</span>
-          <span class="proj-tag">Chart.js</span>
+          <span class="proj-tag">HTML</span>
+          <span class="proj-tag">CSS3</span>
+          <span class="proj-tag">JavaScript</span>
+          <span class="proj-tag">Bootstrap</span>
         </div>
       </div>
       <div class="proj-footer">
@@ -560,20 +622,22 @@
         <div class="proj-top-row">
           <span class="proj-name">Number recognition using CNN</span>
           <div class="proj-links">
-            <a href="https://github.com" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+            <a href="https://github.com/sagar-shrestha-swe/Minor_Project" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
               <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="https://example.com" class="icon-link" target="_blank" rel="noopener" aria-label="Live site">
+            <a href="https://github.com/sagar-shrestha-swe/Minor_Project" class="icon-link" target="_blank" rel="noopener" aria-label="Live site">
               <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
         </div>
-        <p class="proj-desc">Real-time reporting dashboard for internal analytics — reduced manual reporting effort by 30% across teams.</p>
+        <p class="proj-desc">Developed an AI-powered handwritten mark recognition system using Pytorch, OpenCV, Flask, and SQLite to automate academic result processing.</p>
         <div class="exp-tech ">
           <span class="proj-tag">React</span>
-          <span class="proj-tag">PostgreSQL</span>
-          <span class="proj-tag">AWS</span>
-          <span class="proj-tag">Chart.js</span>
+          <span class="proj-tag">SQLite</span>
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">OpenCV</span>
+          <span class="proj-tag">Flask</span>
+
         </div>
       </div>
       <div class="proj-footer">
@@ -604,20 +668,20 @@
         <div class="proj-top-row">
           <span class="proj-name">Fake Product Identification</span>
           <div class="proj-links">
-            <a href="https://github.com" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+            <a href="https://github.com/sharma66mahesh/product-tracing-mono-repo" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
               <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
-            <a href="https://example.com" class="icon-link" target="_blank" rel="noopener" aria-label="Live site">
+            <a href="https://github.com/sharma66mahesh/product-tracing-mono-repo" class="icon-link" target="_blank" rel="noopener" aria-label="Live site">
               <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
         </div>
-        <p class="proj-desc">Real-time reporting dashboard for internal analytics — reduced manual reporting effort by 30% across teams.</p>
+        <p class="proj-desc">Designed a blockchain-powered product traceability system with smart contracts and QR code authentication to prevent counterfeit products.</p>
         <div class="exp-tech ">
           <span class="proj-tag">React</span>
-          <span class="proj-tag">PostgreSQL</span>
-          <span class="proj-tag">AWS</span>
-          <span class="proj-tag">Chart.js</span>
+          <span class="proj-tag">Ethereum</span>
+          <span class="proj-tag">Solidity</span>
+          <span class="proj-tag">Blockchain</span>
         </div>
       </div>
       <div class="proj-footer">

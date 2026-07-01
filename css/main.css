@@ -530,10 +530,20 @@ section {
   align-items: center;
   justify-content: center;
 }
+.proj-card {
+  display: flex;
+  flex-direction: column;
+}
+.proj-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  flex: 1;
+}
 
 .project-pic {
   border-radius: 10px 10px 0px 0px;
-  height: auto;
+  width: 400px;
+  height: 175px;
 }
 
 .status-badge {
@@ -572,6 +582,7 @@ section {
 
 .proj-body {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 1rem;
   padding: 0.5rem;
@@ -781,6 +792,12 @@ section {
   margin-top: 8px;
 }
 
+.exp-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-top: 8px;
+}
 .heading-main {
   margin-top: 2rem;
   font-size: 28px;
@@ -792,6 +809,9 @@ section {
 
 .heading-main .highlight {
   color: var(--blue);
+}
+.exp-role {
+  font-weight: 600;
 }
 
 .heading-sub {
@@ -906,4 +926,89 @@ footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
+}
+
+.hunk {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.hunk:last-of-type {
+  margin-bottom: 0;
+}
+
+.hunk-head {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 9px 14px;
+  background: var(--blue-dim);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-mono);
+  color: var(--blue);
+}
+
+.hunk-head .path {
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.hunk-head .count {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-size: 11.5px;
+}
+
+.hunk[data-cat='batch'] .hunk-head {
+  background: var(--green-dim);
+  color: var(--green);
+}
+.hunk[data-cat='collab'] .hunk-head {
+  background: var(--amber-dim);
+  color: var(--amber);
+}
+
+.hunk-lines {
+  padding: 4px 0;
+}
+
+.line {
+  display: flex;
+  gap: 10px;
+  padding: 5px 14px 5px 10px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.line:hover {
+  background: var(--blue-dim);
+}
+.hunk[data-cat='batch'] .line:hover {
+  background: var(--green-dim);
+}
+.hunk[data-cat='collab'] .line:hover {
+  background: var(--amber-dim);
+}
+
+.plus {
+  font-family: var(--font-mono);
+  color: var(--green);
+  user-select: none;
+  flex-shrink: 0;
+}
+.hunk[data-cat='batch'] .plus {
+  color: var(--green);
+}
+.hunk[data-cat='collab'] .plus {
+  color: var(--amber);
+}
+.hunk[data-cat='game'] .hunk-head {
+  background: var(--purple-dim);
+  color: var(--purple);
+}
+.hunk[data-cat='game'] .line:hover {
+  background: var(--purple-dim);
 }
